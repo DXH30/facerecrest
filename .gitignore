@@ -1,0 +1,6 @@
+# Ignore Git
+.git
+node_modules
+
+# But not Gitignore
+!.gitignore
