@@ -1,6 +1,7 @@
 # Ignore Git
 .git
 node_modules
+photos
 
 # But not Gitignore
 !.gitignore

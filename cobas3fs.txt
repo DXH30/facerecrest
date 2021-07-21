@@ -1,0 +1,1 @@
+s3fs gmedia photos -o passwd_file=./passwd-s3fs -o url=https://s3.smartmanagement.id -o endpoint=us-east-1 -o use_path_request_style
