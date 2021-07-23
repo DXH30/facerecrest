@@ -7,8 +7,8 @@
     "monitor": "nodemon ./bin/www"
   },
   "dependencies": {
-    "@tensorflow/tfjs": "^3.8.0",
-    "@tensorflow/tfjs-node": "^3.8.0",
+    "@tensorflow/tfjs": "^3.6.0",
+    "@tensorflow/tfjs-node": "^3.6.1",
     "@vladmandic/face-api": "^1.2.5",
     "aws-sdk": "^2.4.14",
     "canvas": "^2.8.0",

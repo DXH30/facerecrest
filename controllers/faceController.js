@@ -52,13 +52,46 @@ exports.postFace = (req, res, next) => {
 exports.checkFace = async (req, res, next) => {
     // 1 Cek jumlah foto di folder s3 dengan label uuid mahasiswa
     // Download
-    data = req.body.foto;
-    base64Data = data.replace(/^data:image\/png;base64,/, "");
-    base64Data += base64Data.replace("+", " ");
-    binaryData = new Buffer.from(base64Data, "base64").toString("binary");
-    fs.writeFileSync(`photo_test/test.jpeg`, binaryData, "binary");
-    const imageBuffer = fs.readFileSync("photo_test/test.jpeg");
-    const result = await faceApiService.detect(imageBuffer);
-    // console.log(result);
-    res.json(result);
+    try {
+        data = req.body.foto;
+        inlabel = req.body.label;
+        console.log(req.body.label);
+        base64Data = data.replace(/^data:image\/png;base64,/, "");
+        base64Data += base64Data.replace("+", " ");
+        binaryData = new Buffer.from(base64Data, "base64").toString("binary");
+        fs.writeFileSync(`photo_test/test.jpeg`, binaryData, "binary");
+        const imageBuffer = fs.readFileSync("photo_test/test.jpeg");
+        const result = await faceApiService.detect(imageBuffer, inlabel);
+        // console.log(result);
+        const response = {};
+        if (result._distance > 0.3) {
+            response.success = false;
+            response.msg = "Wajah tidak cocok";
+            response.distance = result._distance;
+            response.label = result._label;
+        } else {
+            if (result._label !== inlabel) {
+                response.success = false;
+                response.msg = "Wajah tidak cocok";
+                response.distance = result._distance;
+                response.label = result._label;
+            } else {
+                response.success = true;
+                response.msg = "Wajah cocok";
+                response.distance = result._distance;
+                response.label = result._label;
+            }
+            result.success = true;
+            result.label_dari_php = inlabel;
+        //    result.img = imageBuffer;
+        }
+        res.send(response);
+    } catch (e) {
+        console.log(e);
+        response = {
+            msg: "Terjadi kesalahan",
+            success: false
+        };
+        res.send(response);
+    }
 };
