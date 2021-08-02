@@ -2,6 +2,7 @@
 .git
 node_modules
 photos
+photo_test
 
 # But not Gitignore
 !.gitignore

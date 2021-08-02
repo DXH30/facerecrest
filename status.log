@@ -1,0 +1,1924 @@
+
+> facerecrest@0.0.0 start
+> node ./bin/www
+
+node-pre-gyp info This Node instance does not support builds for Node-API version 8
+node-pre-gyp info This Node instance does not support builds for Node-API version 8
+2021-07-30 16:11:41.290561: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Executing (default): CREATE TABLE IF NOT EXISTS `Users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `firstName` VARCHAR(255), `lastName` VARCHAR(255), `email` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);
+Executing (default): PRAGMA INDEX_LIST(`Users`)
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1081164 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 341,
+  rankType: '4',
+  scopeId: 3
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 2001,
+  rankType: '4',
+  scopeId: 1509
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 2823,
+  rankType: '4',
+  scopeId: 2260
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 3645,
+  rankType: '4',
+  scopeId: 3011
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 4467,
+  rankType: '4',
+  scopeId: 3762
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 5289,
+  rankType: '4',
+  scopeId: 4513
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.33736821298781855,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m6474.899 ms - 128[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1171263 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 6447,
+  rankType: '4',
+  scopeId: 5264
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 8085,
+  rankType: '4',
+  scopeId: 6762
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 8907,
+  rankType: '4',
+  scopeId: 7513
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 9729,
+  rankType: '4',
+  scopeId: 8264
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 10551,
+  rankType: '4',
+  scopeId: 9015
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 11373,
+  rankType: '4',
+  scopeId: 9766
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.3512643099070124,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m4247.800 ms - 127[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1023930 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 12531,
+  rankType: '4',
+  scopeId: 10517
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 14559,
+  rankType: '4',
+  scopeId: 12376
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 15381,
+  rankType: '4',
+  scopeId: 13127
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 16203,
+  rankType: '4',
+  scopeId: 13878
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 17025,
+  rankType: '4',
+  scopeId: 14629
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 17847,
+  rankType: '4',
+  scopeId: 15380
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.34861863333913756,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m3929.320 ms - 128[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1051346 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 19005,
+  rankType: '4',
+  scopeId: 16131
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 20643,
+  rankType: '4',
+  scopeId: 17629
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 21465,
+  rankType: '4',
+  scopeId: 18380
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 22287,
+  rankType: '4',
+  scopeId: 19131
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 23109,
+  rankType: '4',
+  scopeId: 19882
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 23931,
+  rankType: '4',
+  scopeId: 20633
+}
+Detected faces: undefined
+undefined
+{
+  success: true,
+  msg: 'Wajah cocok',
+  distance: 0.26293873789029665,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m3749.908 ms - 121[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1563140 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 25089,
+  rankType: '4',
+  scopeId: 21384
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 26727,
+  rankType: '4',
+  scopeId: 22882
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 27549,
+  rankType: '4',
+  scopeId: 23633
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 28371,
+  rankType: '4',
+  scopeId: 24384
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 29193,
+  rankType: '4',
+  scopeId: 25135
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 30015,
+  rankType: '4',
+  scopeId: 25886
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.3551752365068913,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m4595.724 ms - 127[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1514091 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 31173,
+  rankType: '4',
+  scopeId: 26637
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 32811,
+  rankType: '4',
+  scopeId: 28135
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 33633,
+  rankType: '4',
+  scopeId: 28886
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 34455,
+  rankType: '4',
+  scopeId: 29637
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 35277,
+  rankType: '4',
+  scopeId: 30388
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 36099,
+  rankType: '4',
+  scopeId: 31139
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.3069501240751532,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m16334.907 ms - 127[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1427642 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 37257,
+  rankType: '4',
+  scopeId: 31890
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 38895,
+  rankType: '4',
+  scopeId: 33388
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 39717,
+  rankType: '4',
+  scopeId: 34139
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 40539,
+  rankType: '4',
+  scopeId: 34890
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 41361,
+  rankType: '4',
+  scopeId: 35641
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 42183,
+  rankType: '4',
+  scopeId: 36392
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.406525386150853,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m8541.573 ms - 126[0m
+mobile-3bc082a8-6a98-411d-b2f5-fe1835dc365d
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e1 01 50 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 07 01 00 00 04 00 00 00 01 00 00 04 38 01 10 00 02 00 00 00 09 00 00 00 62 01 01 00 04 ... 80904 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 43341,
+  rankType: '4',
+  scopeId: 37143
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 45001,
+  rankType: '4',
+  scopeId: 38649
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 45823,
+  rankType: '4',
+  scopeId: 39400
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 46645,
+  rankType: '4',
+  scopeId: 40151
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 47467,
+  rankType: '4',
+  scopeId: 40902
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 48289,
+  rankType: '4',
+  scopeId: 41653
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.43644740373055546,
+  label: 'mobile-3bc082a8-6a98-411d-b2f5-fe1835dc365d'
+}
+[0mPOST /face/check [32m200 [0m3919.358 ms - 128[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 3034287 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 49447,
+  rankType: '4',
+  scopeId: 42404
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 51085,
+  rankType: '4',
+  scopeId: 43902
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 51907,
+  rankType: '4',
+  scopeId: 44653
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 52729,
+  rankType: '4',
+  scopeId: 45404
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 53551,
+  rankType: '4',
+  scopeId: 46155
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 54373,
+  rankType: '4',
+  scopeId: 46906
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.3477637872878173,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m6287.486 ms - 127[0m
+mobile-3bc082a8-6a98-411d-b2f5-fe1835dc365d
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e1 01 50 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 07 01 00 00 04 00 00 00 01 00 00 04 38 01 10 00 02 00 00 00 09 00 00 00 62 01 01 00 04 ... 88541 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 55531,
+  rankType: '4',
+  scopeId: 47657
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 58361,
+  rankType: '4',
+  scopeId: 50246
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 59183,
+  rankType: '4',
+  scopeId: 50997
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 60005,
+  rankType: '4',
+  scopeId: 51748
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 60827,
+  rankType: '4',
+  scopeId: 52499
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 61649,
+  rankType: '4',
+  scopeId: 53250
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.3755616017628086,
+  label: 'mobile-3bc082a8-6a98-411d-b2f5-fe1835dc365d'
+}
+[0mPOST /face/check [32m200 [0m2865.198 ms - 127[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1551224 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 62807,
+  rankType: '4',
+  scopeId: 54001
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 64467,
+  rankType: '4',
+  scopeId: 55507
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 65289,
+  rankType: '4',
+  scopeId: 56258
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 66111,
+  rankType: '4',
+  scopeId: 57009
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 66933,
+  rankType: '4',
+  scopeId: 57760
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 67755,
+  rankType: '4',
+  scopeId: 58511
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.3901752072632653,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m8970.775 ms - 127[0m
+mobile-3bc082a8-6a98-411d-b2f5-fe1835dc365d
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e1 01 50 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 07 01 00 00 04 00 00 00 01 00 00 04 38 01 10 00 02 00 00 00 09 00 00 00 62 01 01 00 04 ... 204519 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 68913,
+  rankType: '4',
+  scopeId: 59262
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 70941,
+  rankType: '4',
+  scopeId: 61121
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 71763,
+  rankType: '4',
+  scopeId: 61872
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 72585,
+  rankType: '4',
+  scopeId: 62623
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 73407,
+  rankType: '4',
+  scopeId: 63374
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1920, 1080, 3 ],
+  dtype: 'float32',
+  size: 6220800,
+  strides: [ 6220800, 3240, 3 ],
+  dataId: {},
+  id: 74229,
+  rankType: '4',
+  scopeId: 64125
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.3926807071819144,
+  label: 'mobile-3bc082a8-6a98-411d-b2f5-fe1835dc365d'
+}
+[0mPOST /face/check [32m200 [0m3404.770 ms - 127[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1448718 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 75387,
+  rankType: '4',
+  scopeId: 64876
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 77047,
+  rankType: '4',
+  scopeId: 66382
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 77869,
+  rankType: '4',
+  scopeId: 67133
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 78691,
+  rankType: '4',
+  scopeId: 67884
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 79513,
+  rankType: '4',
+  scopeId: 68635
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 80335,
+  rankType: '4',
+  scopeId: 69386
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.35952595694533496,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m14099.419 ms - 128[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 922326 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 81493,
+  rankType: '4',
+  scopeId: 70137
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 83131,
+  rankType: '4',
+  scopeId: 71635
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 83953,
+  rankType: '4',
+  scopeId: 72386
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 84775,
+  rankType: '4',
+  scopeId: 73137
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 85597,
+  rankType: '4',
+  scopeId: 73888
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 86419,
+  rankType: '4',
+  scopeId: 74639
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.3278619714003982,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m16091.895 ms - 127[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 2151843 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 87577,
+  rankType: '4',
+  scopeId: 75390
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 89237,
+  rankType: '4',
+  scopeId: 76896
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 90059,
+  rankType: '4',
+  scopeId: 77647
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 90881,
+  rankType: '4',
+  scopeId: 78398
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 91703,
+  rankType: '4',
+  scopeId: 79149
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 92525,
+  rankType: '4',
+  scopeId: 79900
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.3308781207745196,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m9886.525 ms - 127[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 2285307 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 93683,
+  rankType: '4',
+  scopeId: 80651
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 95343,
+  rankType: '4',
+  scopeId: 82157
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 96165,
+  rankType: '4',
+  scopeId: 82908
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 96987,
+  rankType: '4',
+  scopeId: 83659
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 97809,
+  rankType: '4',
+  scopeId: 84410
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 98631,
+  rankType: '4',
+  scopeId: 85161
+}
+Detected faces: undefined
+undefined
+{
+  success: true,
+  msg: 'Wajah cocok',
+  distance: 0.2555308362490692,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m17214.241 ms - 120[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1107783 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 99789,
+  rankType: '4',
+  scopeId: 85912
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 101449,
+  rankType: '4',
+  scopeId: 87418
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 102271,
+  rankType: '4',
+  scopeId: 88169
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 103093,
+  rankType: '4',
+  scopeId: 88920
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 103915,
+  rankType: '4',
+  scopeId: 89671
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 104737,
+  rankType: '4',
+  scopeId: 90422
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.3051683489120549,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m10651.009 ms - 127[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 2180463 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 105895,
+  rankType: '4',
+  scopeId: 91173
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 107555,
+  rankType: '4',
+  scopeId: 92679
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 108377,
+  rankType: '4',
+  scopeId: 93430
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 109199,
+  rankType: '4',
+  scopeId: 94181
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 110021,
+  rankType: '4',
+  scopeId: 94932
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 110843,
+  rankType: '4',
+  scopeId: 95683
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.34929081317140953,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m5332.850 ms - 128[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1222083 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 112001,
+  rankType: '4',
+  scopeId: 96434
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 113661,
+  rankType: '4',
+  scopeId: 97940
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 114483,
+  rankType: '4',
+  scopeId: 98691
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 115305,
+  rankType: '4',
+  scopeId: 99442
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 116127,
+  rankType: '4',
+  scopeId: 100193
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 116949,
+  rankType: '4',
+  scopeId: 100944
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.30727452762107443,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m4996.277 ms - 128[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1236263 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 118107,
+  rankType: '4',
+  scopeId: 101695
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 119767,
+  rankType: '4',
+  scopeId: 103201
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 120589,
+  rankType: '4',
+  scopeId: 103952
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 121411,
+  rankType: '4',
+  scopeId: 104703
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 122233,
+  rankType: '4',
+  scopeId: 105454
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 123055,
+  rankType: '4',
+  scopeId: 106205
+}
+Detected faces: undefined
+undefined
+{
+  success: false,
+  msg: 'Wajah tidak cocok',
+  distance: 0.38611055635104785,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m6519.350 ms - 128[0m
+mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 48 00 48 00 00 ff e1 07 68 45 78 69 66 00 00 4d 4d 00 2a 00 00 00 08 00 0a 01 0f 00 02 00 00 00 06 00 00 ... 1111346 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 124213,
+  rankType: '4',
+  scopeId: 106956
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 125873,
+  rankType: '4',
+  scopeId: 108462
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 126695,
+  rankType: '4',
+  scopeId: 109213
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 127517,
+  rankType: '4',
+  scopeId: 109964
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 128339,
+  rankType: '4',
+  scopeId: 110715
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 3413, 1920, 3 ],
+  dtype: 'float32',
+  size: 19658880,
+  strides: [ 19658880, 5760, 3 ],
+  dataId: {},
+  id: 129161,
+  rankType: '4',
+  scopeId: 111466
+}
+Detected faces: undefined
+undefined
+{
+  success: true,
+  msg: 'Wajah cocok',
+  distance: 0.28547183345084937,
+  label: 'mobile-af04209f-fe11-4a79-85cc-a4091cca5ed1'
+}
+[0mPOST /face/check [32m200 [0m5095.742 ms - 121[0m
+web-b5ac5044-cb21-41b4-ae26-222c22063e2a
+FaceAPI single-process test
+Version: TensorFlow/JS 3.8.0 FaceAPI 1.3.1 Backend: tensorflow
+Loading FaceAPI models
+<Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 02 fe 00 00 03 fd 08 06 00 00 00 f5 86 69 a3 00 00 00 01 73 52 47 42 00 ae ce 1c e9 00 00 00 44 ... 731952 more bytes>
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1021, 766, 3 ],
+  dtype: 'float32',
+  size: 2346258,
+  strides: [ 2346258, 2298, 3 ],
+  dataId: {},
+  id: 130319,
+  rankType: '4',
+  scopeId: 112217
+}
+[ '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg' ]
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1021, 766, 3 ],
+  dtype: 'float32',
+  size: 2346258,
+  strides: [ 2346258, 2298, 3 ],
+  dataId: {},
+  id: 131957,
+  rankType: '4',
+  scopeId: 113715
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1021, 766, 3 ],
+  dtype: 'float32',
+  size: 2346258,
+  strides: [ 2346258, 2298, 3 ],
+  dataId: {},
+  id: 132779,
+  rankType: '4',
+  scopeId: 114466
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1021, 766, 3 ],
+  dtype: 'float32',
+  size: 2346258,
+  strides: [ 2346258, 2298, 3 ],
+  dataId: {},
+  id: 133601,
+  rankType: '4',
+  scopeId: 115217
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1021, 766, 3 ],
+  dtype: 'float32',
+  size: 2346258,
+  strides: [ 2346258, 2298, 3 ],
+  dataId: {},
+  id: 134423,
+  rankType: '4',
+  scopeId: 115968
+}
+Tensor {
+  kept: false,
+  isDisposedInternal: false,
+  shape: [ 1, 1021, 766, 3 ],
+  dtype: 'float32',
+  size: 2346258,
+  strides: [ 2346258, 2298, 3 ],
+  dataId: {},
+  id: 135245,
+  rankType: '4',
+  scopeId: 116719
+}
+Detected faces: undefined
+undefined
+{
+  success: true,
+  msg: 'Wajah cocok',
+  distance: 0.20821321872117418,
+  label: 'web-b5ac5044-cb21-41b4-ae26-222c22063e2a'
+}
+[0mPOST /face/check [32m200 [0m23234.166 ms - 118[0m

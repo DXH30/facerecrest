@@ -89,41 +89,6 @@ async function main(file, inlabel) {
 
 //async function loadLabeledImages() {
 async function loadLabeledImages(inlabel) {
-    //// Upload ke s3 dari input
-    //const comparatorPath = "./photos/mahasiswa/dataset";
-    ////const comparatorPath = "./dataset1";
-    //const labels = fs.readdirSync(comparatorPath);
-    //const output = 
-    //    Promise.all(
-    //        labels.map(async (label) => {
-    //            const allFiles = fs.readdirSync(`${comparatorPath}/${label}/`);
-    //            const descriptions = [];
-    //            allFiles.forEach(async(i) => {
-    //                //try {
-    //                    // Ambil semua file dari s3 untuk di train
-    //                    const file = await fs.readFileSync(`${comparatorPath}/${label}/${i}`);
-
-    //                    // Jika file sudah di get masukkan ke dalam detections
-    //                    const img = await image(file);
-
-    //                    const detections = await faceapi
-    //                        .detectSingleFace(img)
-    //                        .withFaceLandmarks()
-    //                        .withFaceDescriptor();
-
-    //                    console.log(detections);
-
-    //                    descriptions.push(detections.descriptor);
-    //                //} catch (e) {
-    //                //    console.log(`File ${label}/${i}`);
-    //                //    console.log(e);
-    //                //}
-    //            });
-    //            // Setiap data foto masuk, ini harus dipanggil
-    //            return new faceapi.LabeledFaceDescriptors(label, descriptions);
-    //        })
-    //    );
-
     const directoryPath = `./photos/mahasiswa/dataset/${inlabel}/`;
 
     const allFiles = fs.readdirSync(directoryPath);
@@ -147,33 +112,42 @@ async function loadLabeledImages(inlabel) {
         }
     };
     output = new faceapi.LabeledFaceDescriptors(inlabel, descriptions);
-
-    //const directoryPath = "./photos/mahasiswa/dataset";
-    //const labels = fs.readdirSync(directoryPath);
-    //const output = Promise.all(
-    //    labels.map(async (label) => {
-    //        const allFiles = fs.readdirSync(`./photos/mahasiswa/dataset/${label}/`);
-    //        const descriptions = [];
-    //        allFiles.map(async(i) => {
-    //            const file = await fs.readFileSync(`./photos/mahasiswa/dataset/${label}/${i}`);
-    //            const img = await image(file);
-    //            try {
-    //                const detections = await faceapi
-    //                    .detectSingleFace(img)
-    //                    .withFaceLandmarks()
-    //                    .withFaceDescriptor();
-    //                descriptions.push(detections.descriptor);
-    //            } catch (e) {
-    //                console.log(e);
-    //            }
-    //        });
-    //        return new faceapi.LabeledFaceDescriptors(label, descriptions);
-    //    })
-    //);
-
     return output;
 }
 
+// async function check if loaded images exist face
+async function checkLabeledImages(inlabel) {
+    const directoryPath = `./photos/mahasiswa/dataset/${inlabel}/`;
+
+    const allFiles = fs.readdirSync(directoryPath);
+    console.log(allFiles);
+    const descriptions = [];
+    var total = 0;
+    for (var i = 0; i < allFiles.length ; i++) {
+        try {
+            // Ambil semua file dari s3 untuk di train
+            const file = await fs.readFileSync(`${directoryPath}/${allFiles[i]}`);
+
+            // Jika file sudah di get masukkan ke dalam detections
+            const img = await image(file);
+            const detections = await faceapi
+                .detectSingleFace(img)
+                .withFaceLandmarks()
+                .withFaceDescriptor();
+
+            if (typeof(detections.descriptor) == 'undefined') {
+                total = total + 1;
+            } else {
+                descriptions.push(detections.descriptor);
+            }
+        } catch (e) {
+            console.log(e);
+        }
+    };
+    output = new faceapi.LabeledFaceDescriptors(inlabel, descriptions);
+    return total;
+}
+
 module.exports = {
-    detect: main,
+    detect: main, // memetakan fungsi main ke detect untuk dipanggil keluar
 };

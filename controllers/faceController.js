@@ -59,12 +59,12 @@ exports.checkFace = async (req, res, next) => {
         base64Data = data.replace(/^data:image\/png;base64,/, "");
         base64Data += base64Data.replace("+", " ");
         binaryData = new Buffer.from(base64Data, "base64").toString("binary");
-        fs.writeFileSync(`photo_test/test.jpeg`, binaryData, "binary");
-        const imageBuffer = fs.readFileSync("photo_test/test.jpeg");
+        fs.writeFileSync(`photo_test/${inlabel}.jpeg`, binaryData, "binary");
+        const imageBuffer = fs.readFileSync(`photo_test/${inlabel}.jpeg`);
         const result = await faceApiService.detect(imageBuffer, inlabel);
         // console.log(result);
         const response = {};
-        if (result._distance > 0.3) {
+        if (result._distance > 0.3 && result._distance != 0) {
             response.success = false;
             response.msg = "Wajah tidak cocok";
             response.distance = result._distance;
@@ -85,13 +85,34 @@ exports.checkFace = async (req, res, next) => {
             result.label_dari_php = inlabel;
         //    result.img = imageBuffer;
         }
+        // Hapus file
+        //fs.close(imageBuffer);
+        //fs.unlinkSync(`photo_test/${inlabel}.jpeg`);
+        // Hapus label
+        console.log(response);
         res.send(response);
     } catch (e) {
         console.log(e);
         response = {
             msg: "Terjadi kesalahan",
-            success: false
+            success: false,
+            info: e
+        };
+        console.log(response);
+        res.send(response);
+    }
+};
+
+exports.checkFaceExist = async (req, res, next) => {
+    try {
+    } catch (e) {
+        console.log(e);
+        response = {
+            msg: "Terjadi kesalahan",
+            success: false,
+            info: e
         };
         res.send(response);
+
     }
 };
