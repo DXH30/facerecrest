@@ -50,8 +50,6 @@ exports.postFace = (req, res, next) => {
 };
 
 exports.checkFace = async (req, res, next) => {
-    // 1 Cek jumlah foto di folder s3 dengan label uuid mahasiswa
-    // Download
     try {
         data = req.body.foto;
         inlabel = req.body.label;
@@ -64,7 +62,7 @@ exports.checkFace = async (req, res, next) => {
         const result = await faceApiService.detect(imageBuffer, inlabel);
         // console.log(result);
         const response = {};
-        if (result._distance > 0.3 && result._distance != 0) {
+        if (result._distance > 0.32 && result._distance != 0) {
             response.success = false;
             response.msg = "Wajah tidak cocok";
             response.distance = result._distance;

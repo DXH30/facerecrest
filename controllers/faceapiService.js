@@ -6,6 +6,23 @@ const faceapi = require("@vladmandic/face-api/dist/face-api.node.js");
 const canvas = require("canvas");
 const modelPathRoot = "../face/models";
 const weightPathRoot = "../face/weights";
+const https = require('https');
+var AWS = require('aws-sdk');
+AWS.NodeHttpClient.sslAgent = new https.Agent({ rejectUnauthorized: process.env.NODE_TLS_REJECT_UNAUTHORIZED !== '0' });
+
+AWS.config.update({
+    accessKeyId: 'root',
+    secretAccessKey: 'aselole00',
+    region: 'eu-east-1',
+    endpoint: 's3.smartmanagement.id',
+    setEnabled: false,
+    s3ForcePathStyle: true
+ //   sslEnabled: false,
+ //   rejectUnauthorized: false
+});
+var s3 = new AWS.S3();
+
+
 
 let optionsSSDMobileNet;
 
@@ -15,7 +32,7 @@ async function image(file) {
     const result = casted.expandDims(0);
     decoded.dispose();
     casted.dispose();
-    console.log(result);
+    //console.log(result);
     return result;
 }
 
@@ -89,29 +106,67 @@ async function main(file, inlabel) {
 
 //async function loadLabeledImages() {
 async function loadLabeledImages(inlabel) {
-    const directoryPath = `./photos/mahasiswa/dataset/${inlabel}/`;
-
-    const allFiles = fs.readdirSync(directoryPath);
-    console.log(allFiles);
+    // Mulai pakai s3
+    const awsPath = `mahasiswa/dataset/${inlabel}/`;
+    var params = {
+        Bucket: 'gmedia',
+        Delimiter: '',
+        Prefix: awsPath
+    }
     const descriptions = [];
-    for (var i = 0; i < allFiles.length ; i++) {
+
+    var listObject = await s3.listObjects(params).promise();
+    const keys = [];
+    for(var i = 0; i < listObject.Contents.length ; i++) {
+        item = listObject.Contents[i];
         try {
-        // Ambil semua file dari s3 untuk di train
-        const file = await fs.readFileSync(`${directoryPath}/${allFiles[i]}`);
-
-        // Jika file sudah di get masukkan ke dalam detections
-        const img = await image(file);
-        const detections = await faceapi
-            .detectSingleFace(img)
-            .withFaceLandmarks()
-            .withFaceDescriptor();
-
-        descriptions.push(detections.descriptor);
+            var params = {
+                Bucket: 'gmedia',
+                Key: item.Key
+                //Expires: 60*1
+            };
+            const data = await s3.getObject(params).promise();;
+            const file = data.Body;
+            const img = await image(file);
+            console.log(img);
+            const detections = await faceapi
+                .detectSingleFace(img)
+                .withFaceLandmarks()
+                .withFaceDescriptor();
+            descriptions.push(detections.descriptor);
         } catch (e) {
             console.log(e);
         }
-    };
+    }
+
     output = new faceapi.LabeledFaceDescriptors(inlabel, descriptions);
+    //console.log(keys);
+
+    // Selesai pakai s3
+
+    // Mulai pakai file
+
+    //const descriptions = [];
+
+    //const directoryPath = `./photos/mahasiswa/dataset/${inlabel}/`;
+    //const allFiles = fs.readdirSync(directoryPath);
+    //for (var i = 0; i < allFiles.length ; i++) {
+    //    try {
+    //        const file = await fs.readFileSync(`${directoryPath}/${allFiles[i]}`);
+    //        const img = await image(file);
+    //        const detections = await faceapi
+    //            .detectSingleFace(img)
+    //            .withFaceLandmarks()
+    //            .withFaceDescriptor();
+
+    //        descriptions.push(detections.descriptor);
+    //    } catch (e) {
+    //        console.log(e);
+    //    }
+    //};
+    //output = new faceapi.LabeledFaceDescriptors(inlabel, descriptions);
+    // Selesai pakai file
+
     return output;
 }
 

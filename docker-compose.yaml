@@ -5,6 +5,9 @@ networks:
 
 services:
     facer:
+        privileged: true
+        cap_add:
+             - SYS_ADMIN
         build:
             context: .
             dockerfile: Dockerfile
@@ -16,3 +19,4 @@ services:
         networks:
             - facerec
         command: sh -c initialize.sh
+        
